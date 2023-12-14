@@ -24,6 +24,18 @@ public class MyServer {
             // в данном случае отправим обратно текст
             printWriter.println("text");
 
+            // Усовершенствованный приём, так он будет работать пока не услышит "выход"
+            /**
+            while (scanner.hasNextLine()){
+                String s = scanner.nextLine();
+                printWriter.println("you sea: "+s);
+                System.out.println(s);
+                if (s.equals("exit")){
+                    break;
+                }
+            }
+             **/
+
         } catch (IOException e) {
             e.printStackTrace();
         }
